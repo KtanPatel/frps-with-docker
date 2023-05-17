@@ -6,6 +6,8 @@ cd /frps
 cat <<-EOF > /frps/frps.ini
 [common]
 bind_port = $PORT
+vhost_http_port = 80
+vhost_https_port = 443
 EOF
 
 echo "Running FRP Server :D"

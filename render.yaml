@@ -1,0 +1,9 @@
+services:
+  # A Docker web service
+  - type: web
+    name: opash-frps
+    env: docker
+    branch: main # optional (defaults to master)
+    rootDir: /
+    numInstances: 1 # optional (defaults to 1)
+    # healthCheckPath: /ping
